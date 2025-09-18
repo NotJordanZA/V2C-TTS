@@ -1,0 +1,39 @@
+{
+  "audio": {
+    "sample_rate": 22050,
+    "chunk_size": 1024,
+    "input_device_id": -1,
+    "output_device_id": -1,
+    "vad_threshold": 0.5
+  },
+  "stt": {
+    "model_size": "small",
+    "device": "cuda",
+    "language": "auto"
+  },
+  "character": {
+    "default_character": "neutral",
+    "intensity": 1.5,
+    "llm_model_path": "models/llama-3.1-8b-instruct.gguf",
+    "max_tokens": 256,
+    "temperature": 0.7
+  },
+  "tts": {
+    "model_path": "models/tts_model.pth",
+    "device": "cuda",
+    "sample_rate": 22050,
+    "speed": 1.0
+  },
+  "performance": {
+    "max_latency_ms": 2000,
+    "gpu_memory_fraction": 0.8,
+    "enable_model_offloading": true,
+    "batch_size": 1
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "logs/voice_transform.log",
+    "max_file_size": "10MB",
+    "backup_count": 5
+  }
+}

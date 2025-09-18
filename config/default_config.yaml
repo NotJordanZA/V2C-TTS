@@ -1,0 +1,44 @@
+# Default configuration for Voice Character Transformation System
+
+# Audio settings
+audio:
+  sample_rate: 16000
+  chunk_size: 1024
+  input_device_id: -1  # -1 for default device
+  output_device_id: -1  # -1 for default device
+  vad_threshold: 0.5  # Voice activity detection threshold
+
+# Speech-to-Text settings
+stt:
+  model_size: "base"  # tiny, base, small, medium, large
+  device: "cuda"  # cuda, cpu
+  language: "auto"  # auto-detect or specific language code
+
+# Character transformation settings
+character:
+  default_character: "neutral"
+  intensity: 1.0  # 0.0 to 2.0
+  llm_model_path: "models/llama-3.1-8b-instruct.gguf"
+  max_tokens: 256
+  temperature: 0.7
+
+# Text-to-Speech settings
+tts:
+  model_path: "models/tts_model.pth"
+  device: "cuda"
+  sample_rate: 22050
+  speed: 1.0
+
+# Performance settings
+performance:
+  max_latency_ms: 2000
+  gpu_memory_fraction: 0.8
+  enable_model_offloading: true
+  batch_size: 1
+
+# Logging settings
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file: "logs/voice_transform.log"
+  max_file_size: "10MB"
+  backup_count: 5
