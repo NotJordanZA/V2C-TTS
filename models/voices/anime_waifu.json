@@ -1,0 +1,16 @@
+{
+  "name": "anime_waifu",
+  "model_path": "models/voices/anime_waifu.wav",
+  "sample_rate": 22050,
+  "language": "en",
+  "gender": "female",
+  "description": "High-pitched, cute anime-style female voice with energetic delivery",
+  "characteristics": {
+    "pitch": "high",
+    "energy": "high",
+    "emotion": "cheerful",
+    "accent": "neutral"
+  },
+  "recommended_for": ["anime-waifu"],
+  "fallback_voices": ["default_female"]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "default_female",
+  "model_path": "",
+  "sample_rate": 22050,
+  "language": "en",
+  "gender": "female",
+  "description": "Standard female voice with neutral characteristics",
+  "characteristics": {
+    "pitch": "medium",
+    "energy": "medium",
+    "emotion": "neutral",
+    "accent": "neutral"
+  },
+  "recommended_for": ["default"],
+  "fallback_voices": []
+}

@@ -175,17 +175,24 @@ class AudioDeviceManager:
                 return False
             
             # Test if the format is supported
-            format_info = {
-                'rate': sample_rate,
-                'channels': channels,
-                'format': pyaudio.paInt16,
-                'input': is_input,
-                'output': not is_input,
-                'input_device_index': device_id if is_input else None,
-                'output_device_index': device_id if not is_input else None
-            }
-            
-            return self._pyaudio.is_format_supported(**format_info)
+            try:
+                if is_input:
+                    return self._pyaudio.is_format_supported(
+                        rate=sample_rate,
+                        input_device=device_id,
+                        input_channels=channels,
+                        input_format=pyaudio.paInt16
+                    )
+                else:
+                    return self._pyaudio.is_format_supported(
+                        rate=sample_rate,
+                        output_device=device_id,
+                        output_channels=channels,
+                        output_format=pyaudio.paInt16
+                    )
+            except Exception:
+                # If format checking fails, assume it's not supported
+                return False
             
         except Exception as e:
             logger.warning(f"Device validation failed for device {device_id}: {str(e)}")

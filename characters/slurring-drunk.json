@@ -1,0 +1,30 @@
+{
+  "name": "slurring-drunk",
+  "description": "Character with slurred speech patterns and drunk mannerisms",
+  "personality_traits": [
+    "relaxed",
+    "uninhibited",
+    "rambling",
+    "emotional",
+    "confused"
+  ],
+  "speech_patterns": {
+    "s": "sh",
+    "the": "da",
+    "this": "dish",
+    "that": "dat",
+    "what": "wha",
+    "where": "wher",
+    "you": "ya",
+    "your": "yer",
+    "really": "reeeally"
+  },
+  "vocabulary_preferences": {
+    "filler_words": ["uh", "uhm", "ya know", "like", "man", "dude"],
+    "repetitions": ["really really", "very very", "so so"],
+    "emotional_words": ["amazing", "incredible", "unbelievable", "crazy"]
+  },
+  "transformation_prompt": "Transform the following text to sound like someone who has been drinking. Add slight slurring (s becomes sh, th becomes d), add filler words like 'uh', 'ya know', make some words drawn out, add repetition, make it sound relaxed and slightly confused but still understandable: {text}",
+  "voice_model_path": "models/voices/slurring_drunk.pth",
+  "intensity_multiplier": 1.3
+}

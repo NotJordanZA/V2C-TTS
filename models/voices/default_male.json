@@ -1,0 +1,16 @@
+{
+  "name": "default_male",
+  "model_path": "",
+  "sample_rate": 22050,
+  "language": "en",
+  "gender": "male",
+  "description": "Standard male voice with neutral characteristics",
+  "characteristics": {
+    "pitch": "medium-low",
+    "energy": "medium",
+    "emotion": "neutral",
+    "accent": "neutral"
+  },
+  "recommended_for": ["default"],
+  "fallback_voices": []
+}

@@ -1,0 +1,13 @@
+{
+  "name": "default",
+  "description": "Default neutral character with minimal transformations",
+  "personality_traits": [
+    "neutral",
+    "clear"
+  ],
+  "speech_patterns": {},
+  "vocabulary_preferences": {},
+  "transformation_prompt": "Repeat the following text with minimal changes: {text}",
+  "voice_model_path": "",
+  "intensity_multiplier": 1.0
+}

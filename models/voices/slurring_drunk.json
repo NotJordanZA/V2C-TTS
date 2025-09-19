@@ -1,0 +1,17 @@
+{
+  "name": "slurring_drunk",
+  "model_path": "models/voices/slurring_drunk.wav",
+  "sample_rate": 22050,
+  "language": "en",
+  "gender": "neutral",
+  "description": "Relaxed, slightly slurred voice with slower delivery and casual tone",
+  "characteristics": {
+    "pitch": "medium",
+    "energy": "low",
+    "emotion": "relaxed",
+    "accent": "neutral",
+    "speech_rate": "slow"
+  },
+  "recommended_for": ["slurring-drunk"],
+  "fallback_voices": ["default_male", "default_female"]
+}

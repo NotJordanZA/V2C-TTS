@@ -1,0 +1,17 @@
+{
+  "timestamp": 1758291360.565174,
+  "summary": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0,
+    "success_rate": 1.0
+  },
+  "results": {
+    "Configuration Validation": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  }
+}

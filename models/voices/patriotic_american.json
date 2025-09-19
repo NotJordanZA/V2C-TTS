@@ -1,0 +1,16 @@
+{
+  "name": "patriotic_american",
+  "model_path": "models/voices/patriotic_american.wav",
+  "sample_rate": 22050,
+  "language": "en",
+  "gender": "male",
+  "description": "Strong, confident American male voice with authoritative delivery",
+  "characteristics": {
+    "pitch": "medium-low",
+    "energy": "high",
+    "emotion": "confident",
+    "accent": "american"
+  },
+  "recommended_for": ["patriotic-american"],
+  "fallback_voices": ["default_male"]
+}

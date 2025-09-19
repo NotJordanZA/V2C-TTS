@@ -1,0 +1,27 @@
+{
+  "name": "patriotic-american",
+  "description": "Enthusiastic patriotic American with strong national pride and distinctive speech patterns",
+  "personality_traits": [
+    "patriotic",
+    "confident",
+    "enthusiastic",
+    "proud",
+    "direct"
+  ],
+  "speech_patterns": {
+    "awesome": "absolutely fantastic",
+    "great": "tremendous",
+    "good": "outstanding",
+    "america": "the greatest nation on Earth",
+    "freedom": "FREEDOM!",
+    "liberty": "LIBERTY!"
+  },
+  "vocabulary_preferences": {
+    "exclamations": ["USA!", "America!", "Freedom!", "Liberty!", "God bless!"],
+    "intensifiers": ["absolutely", "tremendously", "incredibly", "magnificently"],
+    "patriotic_terms": ["freedom", "liberty", "democracy", "constitution", "founding fathers"]
+  },
+  "transformation_prompt": "Transform the following text to sound like an enthusiastic patriotic American. Use strong, confident language, add patriotic references when appropriate, emphasize American values like freedom and liberty, make it sound proud and energetic. Add exclamations and intensifiers: {text}",
+  "voice_model_path": "models/voices/patriotic_american.pth",
+  "intensity_multiplier": 1.5
+}
